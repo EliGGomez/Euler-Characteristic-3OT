@@ -18,7 +18,7 @@ function [VCC] = VertexChain(F4Copia)
     end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %Para pasar de F4 a VCC
-    tic
+  
     MatTrasVCC = [0 1 4 2;
                   2 0 1 4;
                   4 2 0 1;
@@ -34,19 +34,5 @@ function [VCC] = VertexChain(F4Copia)
                 VCC(i) = MatTrasVCC(x+1,y+1);
         end
     end
-    toc
     LlegoFinVcc = 1;
-
-%     TamVCC = size(VCC);
-%     Revcc = double(TamVCC(1,1));
-%     Covcc = double(TamVCC(1,2));
-% 
-%     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Archivo = fopen('D:\INFORMACIÓN\DOCUMENTOS\DOCTORADO\2° Semestre\ARTÍCULO - REVISIÓN IJPAIR\CÓDIGO\VertexChain.txt','w+');
-% 
-%     for i=1:Covcc
-%         fprintf(Archivo,'%d',VCC(1,i)); 
-%     end
-%     fclose(Archivo);
-%     guardoVCC = 1;
 end

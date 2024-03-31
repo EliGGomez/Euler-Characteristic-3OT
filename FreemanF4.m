@@ -3,8 +3,7 @@ function [F4Re] = FreemanF4(Freeman)
     TamFre = size(Freeman);
     Re = double(TamFre(1,1));
     Co = double(TamFre(1,2));
-    tic
-    
+ 
     F4 = [];
     
     MatTrasF4 = [0  6  7   8   4      4   4    9;
@@ -39,7 +38,7 @@ function [F4Re] = FreemanF4(Freeman)
           con=con+1;
       end
     end
-    toc
+    
     llegofinF4 = 1;
     
     %Pasa la cadena F4 a un archivo 

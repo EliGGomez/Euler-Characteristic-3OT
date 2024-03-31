@@ -1,21 +1,4 @@
-function [Freeman] = FreemanF8(Mres)
-%Size of image
-    T = size(Mres);
-    R = double(T(1,1));
-    C = double(T(1,2)); 
-%--------------------------Freeman chain code------------------------------
-%%% Find first pixel
-    for i=1:R
-        for j=1:C
-            if(Mres(i,j)==1)
-            CooRen=i;
-            CooCol=j;
-            break
-            end
-        end 
-    end
-            CooRen;
-            CooCol;
+function [Freeman] = FreemanF8(Mres, CooRen, CooCol)
     cooCA=0;
     cooRA=0;
     i=CooRen;
@@ -24,7 +7,7 @@ function [Freeman] = FreemanF8(Mres)
 %Star
     Freeman=[];% Freeman chain code
     n=1;
-    tic
+    
     while ((CooRen~=cooRA)||(CooCol~=cooCA))
         Mres(i,j)=2;
         cooRA=i;
@@ -102,6 +85,6 @@ function [Freeman] = FreemanF8(Mres)
           cooCA=j;
           n=n+1;
     end%while 
-    toc
+
     llegoFinF8=1;
 end

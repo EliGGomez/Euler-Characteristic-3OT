@@ -1,5 +1,5 @@
 function [convexities, concavities] = ParityTheorem(OTB)
-%Convexidades y concavidades en terminos de los teoremas 5.1 y 5.2
+%Convexidades y concavidades en terminos de los teoremas propuestos 
 %El primer 2 en una cadena 3OT siempre representa una convexidad 
 
     convexities = 0;
@@ -12,7 +12,7 @@ function [convexities, concavities] = ParityTheorem(OTB)
     SizeOTB= size(OTB);
     CoOTB = double(SizeOTB(1,2));
     
-    tic
+
     for i=1:CoOTB
         if OTB(i) == 1
             w = w + 1;

@@ -113,20 +113,6 @@ function [OTB] = ThreeOT(F4Copia)
 
     LlegoFin3OT = 1;
 
-%     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     TamOT = size(OT);
-%     ReOT = double(TamOT(1,1));
-%     CoOT = double(TamOT(1,2));
-% 
-%     Archivo = fopen('D:\INFORMACIÓN\DOCUMENTOS\DOCTORADO\2° Semestre\ARTÍCULO - REVISIÓN IJPAIR\CÓDIGO\3OTChain.txt','w+');
-% 
-%     for i=1:CoOT
-%         fprintf(Archivo,'%d',OT(1,i)); 
-%     end
-%     fclose(Archivo);
-%     guardo3OT = 1;
-%     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
     %--------------------------------------------------------------------------
     A =[];
     B = [];
