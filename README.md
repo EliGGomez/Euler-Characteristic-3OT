@@ -1,2 +1,2 @@
-# Euler characteristic computation by means of Three Ortogonal symbol chain code
+#### Euler characteristic computation by means of Three Ortogonal symbol chain code
 
