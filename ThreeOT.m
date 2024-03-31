@@ -15,9 +15,9 @@ function [OTB] = ThreeOT(F4Copia)
             x=F4Re(1,i);
             y=F4Re(1,i+1);
 
-            if x == y %Condición para saber si se tratan de 2 números iguales
+            if x == y %CondiciÃ³n para saber si se tratan de 2 nÃºmeros iguales
                 OT(i) = 0;
-            elseif MatTras3OT(x+1,y+1) == 4 %Esto es para saber qué entré al asterisco
+            elseif MatTras3OT(x+1,y+1) == 4 %Esto es para saber quÃ© entrÃ© al asterisco
                 if i-1 > 0 
                     ref = F4Re(1,i-1);
                     if(ref ~= x)  
@@ -109,7 +109,6 @@ function [OTB] = ThreeOT(F4Copia)
             end
         end
     end 
-    toc
 
     LlegoFin3OT = 1;
 
